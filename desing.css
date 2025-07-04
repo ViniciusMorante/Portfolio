@@ -1,0 +1,60 @@
+/* Estilos personalizados para complementar Tailwind CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Estilização para o menu móvel */
+.mobile-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-link[aria-current="page"] {
+  color: #3b82f6; /* Tailwind's blue-500 */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Ajustes para acessibilidade */
+:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Estilização adicional para ícones sociais */
+.social-icon-svg {
+  transition: color 0.3s ease;
+}
+
+/* Animação fade-in para seções */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none !important;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio Vinicius Morante" />
+  <meta name="keywords" content="desenvolvedor web, front-end, HTML, CSS, JavaScript, React, Tailwind, portfólio, java, C, Vinicius Morante" />
+  <meta name="author" content="Vinicius Morante" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vinicius Morante | Portfólio" />
+  <meta property="og:description" content="Desenvolvedor web" />
+  <meta property="og:type" content="website" />
+  <title>Vinicius Morante | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-gray-100 to-gray-200 text-gray-900 font-poppins">
+
+  <header class="mobile-header fixed top-0 w-full bg-white shadow-md z-20 md:hidden">
+    <div class="header-content flex flex-col items-center p-4">
+      <h1 class="header-title text-xl font-bold mb-2">Vinicius Morante</h1>
+      <nav class="mobile-nav flex flex-wrap justify-center gap-2" role="navigation" aria-label="Menu de navegação móvel">
+        <a href="#inicio" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition" aria-current="page">Início</a>
+        <a href="#sobre" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition">Sobre</a>
+        <a href="#projetos" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition">Projetos</a>
+        <a href="#experiencia" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition">Experiência</a>
+        <a href="#educacao" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition">Educação</a>
+        <a href="#conhecimentos" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition">Conhecimentos</a>
+        <a href="#contato" class="nav-link text-sm px-2 py-1 hover:text-blue-500 hover:underline transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar hidden md:block fixed top-0 left-0 h-full w-64 bg-white rounded-r-2xl shadow-lg">
+    <img src="images/Foto.png" alt="Foto de Vinicius Morante" class="profile-img mx-auto mt-6 rounded-full w-32 h-32 border-4 border-blue-100" />
+    <h1 class="sidebar-title text-center text-2xl font-bold mt-4">Vinicius Morante</h1>
+    <nav class="sidebar-nav flex flex-col items-center mt-6 space-y-4" role="navigation" aria-label="Menu principal">
+      <a href="#inicio" class="nav-link text-lg hover:text-blue-500 hover:underline transition" aria-current="page">Início</a>
+      <a href="#sobre" class="nav-link text-lg hover:text-blue-500 hover:underline transition">Sobre</a>
+      <a href="#projetos" class="nav-link text-lg hover:text-blue-500 hover:underline transition">Projetos</a>
+      <a href="#experiencia" class="nav-link text-lg hover:text-blue-500 hover:underline transition">Experiência</a>
+      <a href="#educacao" class="nav-link text-lg hover:text-blue-500 hover:underline transition">Educação</a>
+      <a href="#conhecimentos" class="nav-link text-lg hover:text-blue-500 hover:underline transition">Conhecimentos</a>
+      <a href="#contato" class="nav-link text-lg hover:text-blue-500 hover:underline transition">Contato</a>
+    </nav>
+    <div class="social-links flex justify-center mt-6 space-x-4">
+      <a href="https://github.com/viniciusmorante" aria-label="GitHub de Vinicius Morante" class="social-icon hover:text-blue-500 transition">
+        <svg class="social-icon-svg w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.49v-1.7c-2.78.6-3.36-1.34-3.36-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.564 9.564 0 0112 6.8c.85.004 1.71.11 2.52.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.66.94.66 1.9v2.81c0 .27.16.58.67.49A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z" />
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/viniciusmorante" aria-label="LinkedIn de Vinicius Morante" class="social-icon hover:text-blue-500 transition">
+        <svg class="social-icon-svg w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-1.5 14.25v-5.5c0-2.48-1.02-4.25-3.25-4.25-1.45 0-2.45.98-2.85 1.85v-1.6h-2.9v9.5h2.9v-5.25c0-1.38.73-2.25 1.85-2.25s1.85.87 1.85 2.25v5.25h2.9zM7.75 8.5c.83 0 1.5-.67 1.5-1.5S8.58 5.5 7.75 5.5 6.25 6.17 6.25 7s.67 1.5 1.5 1.5zm0 1.5h-2.9v9.5h2.9v-9.5z" />
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content ml-0 md:ml-64 p-6">
+    <section id="inicio" class="inicio-section py-16 animate-fade-in">
+      <h2 class="section-title text-4xl md:text-5xl font-bold mb-4 text-blue-600">Vinicius Morante</h2>
+      <p class="section-subtitle text-lg md:text-xl mb-6 text-gray-700">Desenvolvedor Web especializado em interfaces modernas, responsivas e acessíveis.</p>
+      <div class="action-buttons flex space-x-4">
+        <a href="#contato" class="action-btn primary bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition hover:scale-105">Entrar em Contato</a>
+        <a href="curriculo/Currículo - VINICIUS MORANTE.pdf" target="_blank"  class="action-btn secondary bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition hover:scale-105">Baixar Currículo</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre-section py-16 animate-fade-in">
+      <div class="section-container">
+        <h2 class="section-title text-3xl font-bold mb-4 text-blue-600">Sobre Mim</h2>
+        <p class="section-text text-lg text-gray-700">
+          Sou um desenvolvedor web apaixonado com mais de 5 anos de experiência em HTML, CSS, JavaScript e React. Desde 2020, venho criando interfaces modernas e responsivas, com foco em performance e acessibilidade. Recentemente, desenvolvi um sistema de gerenciamento de tarefas com autenticação em tempo real, e estou aprofundando meus conhecimentos em TypeScript e Next.js para entregar soluções escaláveis.
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos-section py-16 animate-fade-in">
+      <div class="section-container">
+        <h2 class="section-title text-3xl font-bold mb-6 text-blue-600">Projetos</h2>
+        <div class="project-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:scale-105">
+            <img src="images/emConstrucao" alt=Projeto 1"" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Projeto em criação</h3>
+              <p class="text-gray-600">No momento ainda estou pensando em como fazer, um momento</p>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:scale-105">
+            <img src="images/emConstrucao" alt="Projeto 2" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Projeto em criação</h3>
+              <p class="text-gray-600">No momento ainda estou pensando em como fazer, um momento</p>
+            </div>
+          </div>
+          <div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:scale-105">
+            <img src="images/emConstrucao" alt="Projeto 3" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Projeto em criação</h3>
+              <p class="text-gray-600">No momento ainda estou pensando em como fazer, um momento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="experiencia-section py-16 animate-fade-in">
+      <div class="section-container">
+        <h2 class="section-title text-3xl font-bold mb-6 text-blue-600">Experiência</h2>
+        <div class="experience-list space-y-6">
+          <div class="experience-item bg-white p-6 rounded-lg shadow-md">
+            <h3 class="experience-title text-xl font-semibold mb-2">Analista de suporte - Estágio | German Tech Sistemas (2024 - Presente)</h3>
+            <p class="experience-text text-lg text-gray-700">resolução de problemas técnicos e assistência para usuários.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="educacao" class="educacao-section py-16 animate-fade-in">
+      <div class="section-container">
+        <h2 class="section-title text-3xl font-bold mb-6 text-blue-600">Educação e Certificados</h2>
+        <div class="education-list space-y-6">
+          <div class="education-item bg-white p-6 rounded-lg shadow-md">
+            <h3 class="education-title text-xl font-semibold mb-2">Engenharia de software | Faculdade Assis Gurgacz - FAG (2024 - 2025)</h3>
+            <p class="education-text text-lg text-gray-700">O curso de Engenharia de Software da FAG visa formar profissionais capacitados para projetar, desenvolver e gerenciar software de alta qualidade, utilizando métodos, técnicas e ferramentas adequadas para diversas áreas de aplicação, como inteligência artificial, aplicativos móveis, sistemas embarcados e jogos</p>
+          </div>
+          <div class="education-item bg-white p-6 rounded-lg shadow-md">
+            <h3 class="education-title text-xl font-semibold mb-2">Tecnologia em Sistemas para Internet | Universidade Tecnologica Federal do Paraná - UTFPR (2025 - Atualmente)</h3>
+            <p class="education-text text-lg text-gray-700">O curso de Tecnologia em Sistemas para Internet (TSI) da UTFPR forma profissionais para atuarem no desenvolvimento web, administração de redes e serviços para a internet</p>
+          </div>
+      </div>
+    </section>
+
+    <section id="conhecimentos" class="conhecimentos-section py-16 animate-fade-in">
+      <div class="section-container">
+        <h2 class="section-title text-3xl font-bold mb-6 text-blue-600">Conhecimentos</h2>
+        <div class="skills-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="Ícone do HTML5" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">HTML5</span>
+          </div>
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="Ícone do CSS3" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">CSS3</span>
+          </div>
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Ícone do JavaScript" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">JavaScript</span>
+          </div>
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="Ícone do C" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">C</span>
+          </div>
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Ícone do Java" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">Java</span>
+          </div>
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Ícone do Tailwind CSS" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">Tailwind CSS</span>
+          </div>
+          <div class="skill-item flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:scale-110 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Ícone do Pinguim FDP" class="skill-icon w-12 h-12" />
+            <span class="skill-name mt-2 text-gray-700">Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato-section py-16 animate-fade-in">
+      <div class="section-container">
+        <h2 class="section-title text-3xl font-bold mb-6 text-blue-600">Contato</h2>
+        <p class="section-text text-lg mb-4 text-gray-700">Entre em contato comigo diretamente pelo email ou LinkedIn:</p>
+        <div class="contact-links space-y-2">
+          <p class="contact-link">Email: <a target="_blank" href="mailto:viniciusmorante4@gmail.com" class="contact-link text-blue-500 hover:underline">viniciusmorante4@gmail.com</a></p>
+          <p class="contact-item">LinkedIn: <a target="_blank" href="https://linkedin.com/in/viniciusmorante" class="contact-link text-blue-500 hover:underline">linkedin.com/in/viniciusmorante</a></p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer py-6 text-center bg-gray-200">
+      © 2025 Vinicius Morante. Todos os direitos reservados.
+    </footer>
+  </main>
+</body>
+</html>
